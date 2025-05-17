@@ -1,0 +1,13 @@
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia # активируем nvidia-container-runtime
+    environment:
+      - DEVICE=cuda # заставляем код использовать GPU
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

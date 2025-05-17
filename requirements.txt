@@ -1,0 +1,12 @@
+nltk
+numpy
+torch
+transformers
+scikit-learn
+datasets
+python-telegram-bot>=20.0
+requests
+pdfminer.six
+python-docx
+pillow
+pytesseract
